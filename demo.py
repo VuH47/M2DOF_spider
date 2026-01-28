@@ -4,8 +4,6 @@
 
 """
 Demo: gait 2DOF.
-
-We build a smooth rectangular foot path with `mstraj`, apply per-leg phase
 offsets, and drive the 2-DOF legs via the existing inverse kinematics in the define model.
 """
 
