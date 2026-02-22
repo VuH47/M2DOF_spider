@@ -1,25 +1,20 @@
 # Mini 2DOF Spider Robot
-Python gait/locomotion simulation for custom 2DOF robot + MicroPython/ESP32 cross-communication + GUI design tutorial.
-Simulation ignores friction/vibration/environment.
 
-![alt text](controlMD.png)
+Python gait/locomotion simulation for a custom 2DOF robot with MicroPython/ESP32 cross-communication and GUI design tutorial. The simulation currently ignores friction, vibration, and environmental factors.
+
+![Control System Diagram](controlMD.png)
 
 ## Features
-- Gait & locomotion simulation
-- Real-time MicroPython/ESP C comms
-- Espressif GUI design (non-code)
-- Step-by-step tutorial
 
-## Built with
-- Python 3.12/RVC;Roboticstoolbox.
-- MicroPython
-- Espressif C / IDF
-- GUI Builder
-
-## Quick Start
-```bash
+- **Gait & Locomotion Simulation** - Python-based kinematic modeling
+- **Real-time Communication** - MicroPython/ESP32 ↔ PC cross-communication
+- **GUI Design Tutorial** - Non-code Espressif GUI Builder setup
+- **Step-by-step Documentation** - Complete setup and usage guide
 
 
-![alt text](controlMD.png)
-
+### Prerequisites
+- **Python 3.12** with Robotics Toolbox
+- **MicroPython** - ThonnyIDE
+- **Espressif C / IDF extension** - Low-level control
+- **NXP GUI Guider** - Interface design
 
