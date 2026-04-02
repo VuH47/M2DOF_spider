@@ -13,7 +13,6 @@
 #include "freertos/task.h"
 #include <string.h>
 #include <math.h>
-
 #include "esp_wifi.h"
 #include "esp_now.h"
 #include "esp_event.h"
@@ -47,7 +46,7 @@ static lv_obj_t *temp_label_bio = NULL;
 static lv_obj_t *dist_label_bio = NULL;
 static float current_temperature_c = 0.0f;
 static float current_distance_cm = 0.0f;
-// ESP-NOW peer
+// ESP-NOW 
 static uint8_t peer_mac_biospider[6] = {0xb8, 0xd6, 0x1a, 0xab, 0xd3, 0xbc};
 // Connection status
 static bool espnow_initialized = false;
@@ -324,9 +323,9 @@ static void espnow_recv_cb(const esp_now_recv_info_t *recv_info, const uint8_t *
     memcpy(recv_data, data, copy_len);
     recv_data[copy_len] = '\0';
 
-    // All ESP-NOW messages are from Biospider (5DOF arm disabled)
-    // Display received data in System Log (larger buffer to prevent truncation)
-    // Reuse log_msg buffer below
+    // All ESP-NOW messages are from Biospider 
+    // Display received data in System Log 
+    // Reuse log
 
     // Parse JSON data from slave: {"temperature": 133.0, "distance": 16.7, "status": "OBSTACLE", ...}
     char *temp_ptr = strstr(recv_data, "\"temperature\":");
