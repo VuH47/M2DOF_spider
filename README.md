@@ -2,7 +2,8 @@
 
 Python gait/locomotion simulation for a custom 2DOF robot with MicroPython/ESP32 cross-communication and GUI design tutorial. The simulation currently ignores friction, vibration, and environmental factors.
 
-![Demo1](mainmove.gif)
+<video src="mainmove.mp4" autoplay loop muted playsinline width="100%"></video>
+</video>
 
 ## Features
 
