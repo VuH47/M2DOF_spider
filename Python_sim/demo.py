@@ -148,7 +148,7 @@ def visualize_gait():
                 foot_plots[name].set_data([positions[2, 0]], [positions[2, 1]])
                 foot_plots[name].set_3d_properties([positions[2, 2]])
 
-            ax.set_title(f"Quadruped Robot - Walking.py-style Gait (Phase: {phase % 1.0:.2f})")
+            ax.set_title(f"Quadruped Robot - Walking Phase: {phase % 1.0:.2f})")
             fig.canvas.draw()
             fig.canvas.flush_events()
             plt.pause(0.001)
